@@ -1,0 +1,28 @@
+body{
+	font-family: Arial, Helvetica, sans-serif;
+	box-sizing: border-box;
+	font-family
+	margin: 0 auto;
+	background-image: url('agenta.jpg');
+	background-repeat: no-repeat;
+	background-size: 1450px 650px;
+	
+    }
+
+div.well{
+  height: 250px;
+} 
+
+.Absolute-Center {
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+}
+
+.Absolute-Center.is-Responsive {
+  width: 50%; 
+  height: 50%;
+  min-width: 200px;
+  max-width: 400px;
+  padding: 40px;
+}

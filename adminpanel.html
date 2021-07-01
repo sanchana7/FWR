@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<title>Admin</title>
+<!-- Bootstrap core CSS-->
+<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<!-- Custom fonts for this template-->
+<link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<!-- Page level plugin CSS-->
+<link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
+<!-- Custom styles for this template-->
+
+		<link rel="stylesheet" href="adminpanel.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<title>Dashboard</title>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+		
+	</head>
+	
+	<body class="fixed-nav sticky-footer bg-dark" id="page-top">
+
+<a class="navbar-brand" href="adminpanel.html">Start Bootstrap</a>
+<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+		
+<div class="sidenav">
+	<a href="#"><i class="fa fa-fw fa-navicon"></i></a>
+  <a href="hdbc.php"><i class="fa fa-fw fa-file"></i>Add Agent</a>
+  <a href="fetchhotel.php"><i class="fa fa-fw fa-file"></i>Manage HotelDonor</a>
+  <a href="hdbc.php"><i class="fa fa-fw fa-file"></i>Manage Agent</a>
+  <a href="hoteldetail.php"><i class="fa fa-fw fa-h-square"></i>HotelDonar'sDetail</a>
+  <a href="foodcollect.php"><i class="fa fa-fw fa-cutlery"></i>FoodCollecting</a>
+  <a href="#orphanagedetails"><i class="fa fa-fw fa-file"></i>OrphanageDetail</a>
+  <a href="hdbc.php"><i class="fa fa-fw fa-file"></i>Contact</a>
+  <a href="hdbc.php"><i class="fa fa-fw fa-file"></i>Developer</a>
+  
+	
+</div>
+
+  
+  <form align="right" name="form1" method="post" action="index.html">
+  <label><ul>
+  <input name="submit2" type="submit" id="submit2" value="log out">
+  </label></ul>
+</form>
+
+<?php 
+   if (isset($_POST["zero"]))
+   {
+
+    echo $_POST["zero"];
+}
+?>
+
+	</body>
+</html>	

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="donorpanele.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<title>Dashboard</title>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+		
+	</head>
+	<body>
+	
+	<!-- Navbar -->
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+    </div>
+  </div>
+  
+  <form align="right" name="form1" method="post" action="donorlogin.html">
+  <label><ul>
+  <a href="donorlogin.html"><td width="15%">
+  <input name="submit2" type="submit" id="submit2" value="log out">
+  </label></ul>
+ 
+ <form align="right" name="sms" method="post" action="smss.php">
+  <label><ul>
+  <a href="smss.php"><td width="15%">
+  <input name="sms" type="button" id="submit3" value="message">
+  </label></ul>
+ 
+
+ 
+<form align="right" name="notify" method="post" action="notification.php">
+  <label><ul>
+  
+  <a href="notification.php"><td width="15%">
+   <i class="fa fa-bell" aria-hidden="true" id="noti_number"></i>
+ <input name="notify" type="button" id="notify" value="Message"></a></td>
+  </label></ul>
+</form>
+ <a href="index.html"><input type="button" value="Go back!" onclick="donorpanele.html"></a>
+</form>
+  
+  </nav>
+	
+<div class="sidenav">
+	<a href="#"><i class="fa fa-fw fa-navicon"></i></a>
+  <a href="#Dashboard"><i class="fa fa-fw fa-handshake-o"></i>MyDetail's</a>
+  <a href="mydonation.php"><i class="fa fa-fw fa-h-square"></i>MyDonation</a>
+  <a href="hdnow1.php"><i class="fa fa-fw fa-users"></i>DonateNow</a>
+  <a href="Adminc.php"><i class="fa fa-fw fa-cutlery"></i>AdminContact</a>
+</div>
+
+
+
+	<header>
+	
+		
+	</header>
+	
+	
+
+
+	</body>
+</html>	
+
+
+<script type="text/javascript">
+ function loadDoc() {
+  
+  
+  setInterval(function(){
+
+   var xhttp = new XMLHttpRequest();
+   xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+     document.getElementById("noti_number").innerHTML = this.responseText;
+    }
+   };
+   xhttp.open("GET", "notification.php", true);
+   xhttp.send();
+
+  },1000);
+
+
+ }
+ loadDoc();
+</script>
+
